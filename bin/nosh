@@ -7,7 +7,14 @@
 var program = require('commander');
 var nosh = require('../lib/nosh');
 
+var config = {
+    "url": "http://localhost:8080"
+};
+
 program
   .version(nosh.version)
+  .option('-u  --url', 'base url')
   .parse(process.argv);
 
+
+nosh.welcome();

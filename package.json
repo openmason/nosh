@@ -2,10 +2,11 @@
   "name": "nosh",
   "description": "Node.js Shell",
   "homepage": "https://github.com/truepattern/nosh",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "author": "truepattern <admin@truepattern.com>",
   "dependencies": {
-    "commander"     : ">= 1.0.2"
+    "commander"     : ">= 1.0.2",
+    "colors"        : ">= 0.6.0"
   },
   "devDependencies": {
   },
