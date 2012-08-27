@@ -1,0 +1,13 @@
+#!/usr/bin/env node
+/**
+ * nosh - copyright(c) 2012 truepattern.
+ * MIT Licensed
+ */
+
+var program = require('commander');
+var nosh = require('../lib/nosh');
+
+program
+  .version(nosh.version)
+  .parse(process.argv);
+
