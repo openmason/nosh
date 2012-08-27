@@ -16,5 +16,7 @@ program
   .option('-u  --url', 'base url')
   .parse(process.argv);
 
+config.url = program.args.length>0?program.args[0]:config.url;
 
-nosh.welcome();
+nosh.welcome(config);
+nosh.run();
