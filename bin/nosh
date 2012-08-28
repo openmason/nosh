@@ -18,5 +18,4 @@ program
 
 config.url = program.args.length>0?program.args[0]:config.url;
 
-nosh.welcome(config);
-nosh.run();
+var shell = new nosh(config);
