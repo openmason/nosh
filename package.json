@@ -2,7 +2,7 @@
   "name": "nosh",
   "description": "Node.js Shell",
   "homepage": "https://github.com/truepattern/nosh",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "author": "truepattern <admin@truepattern.com>",
   "dependencies": {
     "commander"     : ">= 1.0.2",
@@ -15,6 +15,7 @@
   "keywords": ["shell", "cli"],
   "repository": {"type":"git", "url": "git://github.com/truepattern/nosh"},
   "main": "index",
+  "bin": { "nosh": "./bin/nosh" },
   "scripts": { "prepublish" : "npm prune" },
   "engines": { 
     "node"   :   ">= 0.5.0" 
