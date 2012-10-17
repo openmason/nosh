@@ -11,26 +11,25 @@ var nosh     = require('..');
 var sys      = require('sys');
 var asciimo  = require('asciimo').Figlet;
 var colors   = require('colors');
+var to       = require('to');
 
-var config = {
-    "url": "http://localhost:8080"
-};
+// load the configuration
+var config=to.format.yaml.load('config/settings.yaml');
 
 // nosh <url>
 var argv = optimist.argv;
 
-if(argv._.length==0) {
-  console.log('using '+config.url);
-} else {
-  config.url = argv._[0];
+if(argv._.length>0) {
+  config.rest.url = argv._[0];
 }
-
-// fonts that are good
-// doom / starwars / serifcap / rounded / rectangles / puffy / pepper / pebbles / avatar
+console.log('using '+config.rest.url);
 
 // present the title art
-asciimo.write('nosh', 'doom', function(art) {
-  sys.puts(art.green);
-  var shell = new nosh(config);
+asciimo.write(config.application.name, config.application.banner.font, function(art) {
+  sys.puts(art[config.application.banner.color]);
+
+  // start the shell
+  var shell = new nosh(config, 'rest');
 });
 
+// -- end of nosh

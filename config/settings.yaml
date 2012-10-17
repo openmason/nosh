@@ -1,0 +1,17 @@
+# configuration settings for nosh
+application:
+  name: nosh
+  description: node shell
+  prompt: .
+  banner:
+    # fonts that are good
+    # doom / starwars / serifcap / rounded / rectangles / puffy / pepper / pebbles / avatar
+    font: doom
+    color: green
+  modules:
+    - rest
+
+# http rest module confiuration
+rest:
+  url: http://localhost:8000
+  prompt: http.
