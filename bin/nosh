@@ -1,21 +1,36 @@
 #!/usr/bin/env node
+
 /**
- * nosh - copyright(c) 2012 truepattern.
+ * nosh - copyright(c) 2012 openmason.
+ *
  * MIT Licensed
  */
 
-var program = require('commander');
-var nosh = require('../lib/nosh');
+var optimist = require('optimist');
+var nosh     = require('..');
+var sys      = require('sys');
+var asciimo  = require('asciimo').Figlet;
+var colors   = require('colors');
 
 var config = {
     "url": "http://localhost:8080"
 };
 
-program
-  .version(nosh.version)
-  .option('-u  --url', 'base url')
-  .parse(process.argv);
+// nosh <url>
+var argv = optimist.argv;
 
-config.url = program.args.length>0?program.args[0]:config.url;
+if(argv._.length==0) {
+  console.log('using '+config.url);
+} else {
+  config.url = argv._[0];
+}
 
-var shell = new nosh(config);
+// fonts that are good
+// doom / starwars / serifcap / rounded / rectangles / puffy / pepper / pebbles / avatar
+
+// present the title art
+asciimo.write('nosh', 'doom', function(art) {
+  sys.puts(art.green);
+  var shell = new nosh(config);
+});
+

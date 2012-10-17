@@ -1,19 +1,20 @@
 {
   "name": "nosh",
   "description": "Node.js Shell",
-  "homepage": "https://github.com/truepattern/nosh",
-  "version": "0.0.7",
-  "author": "truepattern <admin@truepattern.com>",
+  "homepage": "https://github.com/openmason/nosh",
+  "version": "0.0.8",
+  "author": "el aras <openmason@gmail.com>",
   "dependencies": {
-    "commander"     : ">= 1.0.2",
+    "optimist"      : ">= 0.3.5",
     "colors"        : ">= 0.6.0",
+    "asciimo"       : ">= 0.3.1",
     "underscore"    : ">= 1.3.3",
     "restler"       : ">= 2.0.1"
   },
   "devDependencies": {
   },
   "keywords": ["shell", "cli"],
-  "repository": {"type":"git", "url": "git://github.com/truepattern/nosh"},
+  "repository": {"type":"git", "url": "git://github.com/openmason/nosh"},
   "main": "index",
   "bin": { "nosh": "./bin/nosh" },
   "scripts": { "prepublish" : "npm prune" },

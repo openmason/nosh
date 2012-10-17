@@ -1,4 +1,5 @@
-# release 0.0.7
+# release 0.0.8
+ * switched to openmason
  * minimum documentation added
  * nosh bin added
 # release 0.0.5
