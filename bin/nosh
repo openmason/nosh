@@ -8,7 +8,7 @@
 
 var optimist = require('optimist');
 var nosh     = require('..');
-var sys      = require('sys');
+var util     = require('util');
 var asciimo  = require('asciimo').Figlet;
 var colors   = require('colors');
 var to       = require('to');
@@ -26,7 +26,7 @@ console.log('using '+config.rest.url);
 
 // present the title art
 asciimo.write(config.application.name, config.application.banner.font, function(art) {
-  sys.puts(art[config.application.banner.color]);
+  util.puts(art[config.application.banner.color]);
 
   // start the shell
   var shell = new nosh(config, 'rest');

@@ -9,7 +9,12 @@ application:
     font: doom
     color: green
   modules:
+    - demo
     - rest
+
+# demo module configuration
+demo:
+  prompt: demo#
 
 # http rest module confiuration
 rest:

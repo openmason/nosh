@@ -9,13 +9,12 @@ A readline based shell with history support.
 ## Start the shell
 
     $ nosh
-                     _     
-                    | |    
-  _ __    ___   ___ | |__  
- | '_ \  / _ \ / __|| '_ \ 
- | | | || (_) |\__ \| | | |
- |_| |_| \___/ |___/|_| |_|
- 
+                         _     
+                        | |    
+      _ __    ___   ___ | |__  
+     | '_ \  / _ \ / __|| '_ \ 
+     | | | || (_) |\__ \| | | |
+     |_| |_| \___/ |___/|_| |_|
 
 ## Features
 A basic list of commands to handle REST
