@@ -5,16 +5,16 @@
  *
  * MIT Licensed
  */
-
-var optimist = require('optimist');
 var nosh     = require('..');
+var path     = require('path');
+var optimist = require('optimist');
 var util     = require('util');
 var asciimo  = require('asciimo').Figlet;
 var colors   = require('colors');
 var to       = require('to');
 
 // load the configuration
-var config=to.format.yaml.load('config/settings.yaml');
+var config=to.format.yaml.load(path.join(__dirname,'..','config','settings.yaml'));
 
 // nosh <url>
 var argv = optimist.argv;

@@ -1,4 +1,5 @@
-# release 0.1.0
+# release 0.1.1
+ * rest commands moved to plugin rest
  * moving towards a plugin architecture
 
 # release 0.0.8
