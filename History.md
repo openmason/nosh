@@ -1,4 +1,5 @@
-# release 0.1.1
+# release 0.1.2
+ * prompt includes host/path
  * rest commands moved to plugin rest
  * moving towards a plugin architecture
 
