@@ -20,3 +20,7 @@ demo:
 rest:
   url: http://localhost:8000
   prompt: http.
+  headers:
+    Accept: application/json
+    Content-Type: application/json
+

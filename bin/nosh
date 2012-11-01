@@ -6,15 +6,33 @@
  * MIT Licensed
  */
 var nosh     = require('..');
+var fs       = require('fs');
 var path     = require('path');
 var optimist = require('optimist');
 var util     = require('util');
 var asciimo  = require('asciimo').Figlet;
 var colors   = require('colors');
 var to       = require('to');
+var _        = require('underscore');
 
 // load the configuration
 var config=to.format.yaml.load(path.join(__dirname,'..','config','settings.yaml'));
+
+// lets look for noshrc in current or root directory
+function getUserHome() {
+  return process.env[(process.platform == 'win32') ? 'USERPROFILE' : 'HOME'];
+}
+
+var noshrc = path.join(getUserHome(),'.noshrc');
+if(fs.existsSync(noshrc)) {
+  var noshrcObj=to.format.yaml.load(noshrc);
+  config = _.extend(config, config, noshrcObj);
+}
+noshrc = path.join(process.cwd(), 'noshrc');
+if(fs.existsSync(noshrc)) {
+  var noshrcObj=to.format.yaml.load(noshrc);
+  config = _.extend(config, config, noshrcObj);
+}
 
 // nosh <url>
 var argv = optimist.argv;
