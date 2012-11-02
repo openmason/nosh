@@ -22,9 +22,9 @@ A basic list of commands to handle REST
 ## Configuration
 The configuration is specified in the following order (last file overrides any previous config)
 
-   * <installation-path>/config/settings.yaml
-   * <HOME>/.noshrc
-   * <current-directory>/noshrc
+    1. <installation-path>/config/settings.yaml
+    2. <HOME>/.noshrc
+    3. <current-directory>/noshrc
 
 Please refer to the config/settings.yaml for all the options and override them as required.
 
