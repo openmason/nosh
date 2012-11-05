@@ -2,7 +2,7 @@
   "name": "nosh",
   "description": "Node.js Shell",
   "homepage": "https://github.com/openmason/nosh",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "author": "el aras <openmason@gmail.com>",
 
   "dependencies": {
