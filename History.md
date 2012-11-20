@@ -1,3 +1,8 @@
+# release 0.2.0
+ * init from .rc file
+ * aliases and list support added
+ * panda environment integrated
+
 # release 0.1.5
  * prompt includes host/path
  * rest commands moved to plugin rest

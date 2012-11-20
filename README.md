@@ -92,3 +92,21 @@ To simply read a json file to request object, use this command
 
 ### History
 Command history is stored and loaded from ~/.nosh-history
+
+### alias
+To add an alias to a command
+
+    .. > newname="command and arguments"
+    ...
+    .. > .alias
+    newname   command and arguments
+    ..    
+    
+#### substitution
+Use mustache syntax within string for subtitutions
+
+    .. > a="abc"
+    .. > b="get students/{{a}}"
+    .. > b
+    would issue 'get students/abc'
+    
