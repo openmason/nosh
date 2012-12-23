@@ -90,6 +90,31 @@ To simply read a json file to request object, use this command
     {"name":"me", "value":.... }
     .. >
 
+### Output
+
+#### Format
+Output from the response object can be printed in json (default) or yaml
+
+    .. > output yaml
+    output format set to yaml
+    .. > ...command..producing..output...
+    - id: xyz 
+      ...
+
+#### Filtering
+Output fields can be filtered using this command (only first level entities given are shown)
+
+    .. > filter id name
+    filter set to id,name
+    .. > ...command..producing..output...
+    - id: xyz 
+      name: abc
+    - id: 123
+      name: 333
+
+##### Limit output entries
+While filter is on, the list of entries to screen can be limited via configuration limitItems
+
 ### History
 Command history is stored and loaded from ~/.nosh-history
 
