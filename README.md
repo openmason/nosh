@@ -39,8 +39,8 @@ Currently basic auth is supported using this command.
 
     ...
     > auth
-    ... username <key-in-username-here>
-    ... password <key-in-password-here>
+    (input) username ? <key-in-username-here>
+    (input) password ? <key-in-password-here>
     auth for <username> set
     # This command would set the basic auth headers based on 
     # input username, password
@@ -71,13 +71,13 @@ Show and manipulate request object.
 
     .. > request
     {}   // <-- displays current object 
-    ... key   <enter key name>
-    ... value <key value>
+    (input) key ?   <enter key name>
+    (input) value ?  <key value>
     
     ...> request
     {}
-    ... key  xyz
-    ... value 123
+    (input) key ? xyz
+    (input) value ? 123
     {"xyz":"123"}
         
     # if value is empty, the key is removed from the request obj
@@ -135,3 +135,9 @@ Use mustache syntax within string for subtitutions
     .. > b
     would issue 'get students/abc'
     
+    .. > input a
+    (input) a ? abc
+    .. > b="get students/{{input.a}}"
+    .. > b
+    would issue 'get students/abc'
+

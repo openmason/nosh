@@ -1,4 +1,5 @@
-# release 0.2.2
+# release 0.2.3
+ * list is now executed in series
  * input command added
  * init from .rc file
  * aliases and list support added
