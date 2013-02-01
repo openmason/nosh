@@ -1,4 +1,5 @@
-# release 0.2.0
+# release 0.2.2
+ * input command added
  * init from .rc file
  * aliases and list support added
  * panda environment integrated
