@@ -2,7 +2,7 @@
   "name": "nosh",
   "description": "Node.js Shell",
   "homepage": "https://github.com/openmason/nosh",
-  "version": "0.2.4",
+  "version": "0.2.5",
   "author": "el aras <openmason@gmail.com>",
 
   "dependencies": {
@@ -14,7 +14,8 @@
     "panda-lang"    : ">= 0.0.7",
     "underscore"    : ">= 1.4.3",
     "async"         : ">= 0.1.22",
-    "restler"       : ">= 2.0.1"
+    "restler"       : ">= 2.0.1",
+    "semver"        : ">= 1.1.2"
   },
   "devDependencies": {
   },

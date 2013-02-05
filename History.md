@@ -1,4 +1,5 @@
-# release 0.2.4
+# release 0.2.5
+ * fixed alias display, checking for version enabled
  * list is now executed in series (also respects any input statements in the list)
  * input command added
  * init from .rc file
