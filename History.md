@@ -1,4 +1,5 @@
-# release 0.2.5
+# release 0.2.6
+ * user/password can also be specified in rc file
  * fixed alias display, checking for version enabled
  * list is now executed in series (also respects any input statements in the list)
  * input command added

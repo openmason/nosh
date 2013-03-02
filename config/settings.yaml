@@ -20,6 +20,9 @@ demo:
 rest:
   url: http://localhost:8000
   prompt: http.
+  # for basic auth
+  #user: username
+  #password: password
   headers:
     Accept: application/json
     Content-Type: application/json
