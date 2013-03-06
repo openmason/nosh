@@ -141,3 +141,18 @@ Use mustache syntax within string for subtitutions
     .. > b
     would issue 'get students/abc'
 
+
+### Pluggable modules
+nosh comes with pluggable modules and by default ships with a demo and rest module. 
+In order to list the modules available, issue 
+
+    .. > .modules
+    rest
+    demo
+    
+To switch between modules, issue
+
+    .. > .switch demo
+    context switched to: demo
+
+
