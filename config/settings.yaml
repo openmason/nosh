@@ -1,13 +1,18 @@
 # configuration settings for nosh
 application:
+  # banner that would be displayed on startup
   name: nosh
   description: node shell
+  # if there is a minimum version that should be
+  # checked before config is loaded, use version
+  version: ">=0.2.7"
   prompt: .
   banner:
     # fonts that are good
     # doom / starwars / serifcap / rounded / rectangles / puffy / pepper / pebbles / avatar
     font: doom
     color: green
+  # List of modules that needs to be loaded
   modules:
     - demo
     - rest
@@ -20,10 +25,17 @@ demo:
 rest:
   url: http://localhost:8000
   prompt: http.
+  # set the output format
+  # values could be one of {yaml, json}
+  outputFormat: yaml
+  # limit output items, would be applied only if filter is used
+  limitItems: 10
   # for basic auth
   #user: username
   #password: password
+  # set any additional http headers
   headers:
     Accept: application/json
     Content-Type: application/json
+    User-Agent: nosh client
 
