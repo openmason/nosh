@@ -1,4 +1,7 @@
 # List of todos
+- add history file to be setup from configuration
+- add noshrc also passed in command line as argument
+- add default module to be passed in configuration as well
 - handle ctrl+c, no quit, instead ask user to press ctrl+d
 - add command 'history' with <n> to show last n commands - defaults to 10
 - add command to launch history command !<id> ?

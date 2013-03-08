@@ -90,6 +90,11 @@ To simply read a json file to request object, use this command
     {"name":"me", "value":.... }
     .. >
 
+#### reset request obj
+To reset request obj (as you might not want to send it via headers)
+
+    ..> reset request
+    
 ### Output
 
 #### Format

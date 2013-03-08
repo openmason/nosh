@@ -1,4 +1,5 @@
-# release 0.2.7
+# release 0.2.8
+ * added reset commands for requestObj and history file picked from config
  * headers had issues and got fixed, module switching added
  * user/password can also be specified in rc file
  * fixed alias display, checking for version enabled

@@ -3,36 +3,47 @@ application:
   # banner that would be displayed on startup
   name: nosh
   description: node shell
+
   # if there is a minimum version that should be
   # checked before config is loaded, use version
   version: ">=0.2.7"
   prompt: .
+
+  # To set a separate history file
+  # - would be set as ~/.<file> (defaults to ~/.nosh-history)
+  history: myhistory
+
   banner:
     # fonts that are good
     # doom / starwars / serifcap / rounded / rectangles / puffy / pepper / pebbles / avatar
     font: doom
     color: green
+
   # List of modules that needs to be loaded
   modules:
     - demo
     - rest
 
-# demo module configuration
+# -------------- demo module configuration
 demo:
   prompt: demo#
 
-# http rest module confiuration
+# -------------- http rest module confiuration
 rest:
   url: http://localhost:8000
   prompt: http.
+
   # set the output format
   # values could be one of {yaml, json}
   outputFormat: yaml
+
   # limit output items, would be applied only if filter is used
   limitItems: 10
+
   # for basic auth
   #user: username
   #password: password
+
   # set any additional http headers
   headers:
     Accept: application/json
