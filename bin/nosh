@@ -45,7 +45,7 @@ asciimo.write(config.application.name, config.application.banner.font, function(
   util.puts(art[config.application.banner.color]);
 
   // start the shell
-  var shell = new nosh(config, 'rest');
+  var shell = new nosh(config);
 });
 
 // -- end of nosh

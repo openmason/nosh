@@ -24,6 +24,9 @@ application:
     - demo
     - rest
 
+  # The module to launch on start
+  start: rest
+
 # -------------- demo module configuration
 demo:
   prompt: demo#
