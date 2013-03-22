@@ -1,4 +1,5 @@
-# release 0.2.8
+# release 0.2.10
+ * commands to navigate path 
  * added reset commands for requestObj and history file picked from config
  * headers had issues and got fixed, module switching added
  * user/password can also be specified in rc file

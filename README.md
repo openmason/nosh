@@ -94,7 +94,20 @@ To simply read a json file to request object, use this command
 To reset request obj (as you might not want to send it via headers)
 
     ..> reset request
-    
+
+### Navigation of url
+For the rest url, navigation of url can be using the following commands. 
+
+    # set the url to root
+    .. /a/b > /
+    .. / >
+    # set the url to parent
+    .. /a/b/c > ..
+    .. /a/b >
+    # append subpath to the url
+    .. /a > /b
+    .. /a/b >
+
 ### Output
 
 #### Format
