@@ -1,4 +1,5 @@
-# release 0.2.10
+# release 0.2.11
+ * upgrading panda, plus making sure request and result is available for the language
  * commands to navigate path 
  * added reset commands for requestObj and history file picked from config
  * headers had issues and got fixed, module switching added
