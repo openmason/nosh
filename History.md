@@ -1,4 +1,5 @@
-# release 0.2.11
+# release 0.2.12
+ * loop construct -> on a list is now available along with let command
  * upgrading panda, plus making sure request and result is available for the language
  * commands to navigate path 
  * added reset commands for requestObj and history file picked from config
